@@ -9,7 +9,7 @@ logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s
 cities = set()
 last_city = ""
 
-with open(file='C:/Users/frans/PycharmProjects/asdasd/96225136a784f8a3987398be96456dce-8d4b63baf056ca0680c6fc18fc76f17c83525c28/txt-cities-russia.txt', encoding='utf-8', mode="r") as filepipka:
+with open(file='Путь к текстовому файлу с городами', encoding='utf-8', mode="r") as filepipka:
     bot_cities = [city.strip() for city in filepipka.readlines()]
 
 def get_valid_last_letter(city: str) -> str:
